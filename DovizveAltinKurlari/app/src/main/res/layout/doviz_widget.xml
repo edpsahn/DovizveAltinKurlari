@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/widget">
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/imageButton"-->
+    <!--style="@style/Widget.AppCompat.ImageButton"-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="92dp"-->
+    <!--android:backgroundTint="@color/colorAccent"-->
+    <!--android:elevation="5dp"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:visibility="visible"-->
+    <!--app:srcCompat="@mipmap/ic_launcher"-->
+    <!--tools:ignore="ContentDescription,UnusedAttribute" />-->
+    <!--android:layout_toEndOf="@+id/imageButton"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:background="@color/colorAccent"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/baslik1"
+                android:layout_width="155dp"
+                android:layout_height="12dp"
+                android:paddingLeft="30dp"
+                android:text="PARA BİRİMİ"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SmallSp" />
+
+            <TextView
+                android:id="@+id/baslik2"
+                android:layout_width="100dp"
+                android:layout_height="12dp"
+                android:layout_weight="1"
+                android:text="ALIŞ"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SmallSp" />
+
+            <TextView
+                android:id="@+id/baslik3"
+                android:layout_width="100dp"
+                android:layout_height="12dp"
+                android:layout_weight="1"
+                android:text="SATIŞ"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SmallSp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dolar"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/usa"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textDolar"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textDolarAlis"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:maxLength="7"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textDolarSatis"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:maxLength="7"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/euro"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:cropToPadding="true"
+                android:visibility="visible"
+                app:srcCompat="@drawable/europeanunion"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textEuro"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textEuroAlis"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:maxLength="7"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textEuroSatis"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:maxLength="7"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/gram"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:contentDescription="@color/colorAccent"
+                android:cropToPadding="true"
+                android:visibility="visible"
+                app:srcCompat="@drawable/altin"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textGram"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textGramAlis"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:maxLength="7"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textGramSatis"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:maxLength="7"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ceyrek"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@color/colorAccent"
+                android:cropToPadding="true"
+                android:elevation="0dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/altin"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/textCeyrek"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textCeyrekAlis"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:maxLength="7"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textCeyrekSatis"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:maxLength="7"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

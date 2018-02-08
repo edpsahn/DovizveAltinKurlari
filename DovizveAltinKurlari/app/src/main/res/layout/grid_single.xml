@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/bayrak"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:background="#F5FDFB"
+            android:gravity="center_horizontal|left"
+            tools:ignore="ContentDescription,RtlHardcoded"></ImageView>
+
+        <TextView
+            android:id="@+id/para"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:background="#F5FDFB"
+            android:gravity="center_vertical|left"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry"></TextView>
+
+        <TextView
+            android:id="@+id/alis"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:background="#F5FDFB"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:maxLength="7"></TextView>
+
+        <TextView
+            android:id="@+id/satis"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:paddingLeft="20dp"
+            android:background="#F5FDFB"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:maxLength="7"
+            tools:ignore="RtlHardcoded,RtlSymmetry"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#F5FDFB"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/oran"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="1"
+                android:background="#F5FDFB"
+                android:gravity="center"
+                tools:ignore="ContentDescription,InefficientWeight"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
